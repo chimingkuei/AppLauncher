@@ -43,9 +43,6 @@
                     <Button x:Name="Demo" Style="{StaticResource BaseButton}" Margin="785,83,45,307" Content="Demo" FontSize="18" Background="#FF3E6FB3" Click="Main_Btn_Click"/>
                     <TextBox x:Name="Parameter1" Style="{StaticResource BaseTextBox}" Tag="請輸入內容..." Margin="790,193,52,212"/>
                     <TextBox x:Name="Parameter2" Style="{StaticResource BaseTextBox}" Tag="請輸入內容..." Margin="793,267,49,139"/>
-                    <WindowsFormsHost  Margin="16,18,234,15">
-                        <wf:PictureBox x:Name="Display_Windows" BorderStyle="FixedSingle"/>
-                    </WindowsFormsHost>
 
                 </Grid>
             </TabItem>

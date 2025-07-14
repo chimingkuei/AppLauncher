@@ -153,7 +153,8 @@ namespace AppLauncher
                         Process.Start(startInfo);
                         Thread.Sleep(1000);
                         ALH.ActivateWindow("rtsp://192.168.0.130:554/stream2 - VLC 媒體播放器");
-                        System.Drawing.Rectangle position = new System.Drawing.Rectangle(100, 100, 200, 200); 
+                        Thread.Sleep(100);
+                        System.Drawing.Rectangle position = new System.Drawing.Rectangle(100, 100, 500, 500);
                         ALH.SetWindowsPosWrapper("rtsp://192.168.0.130:554/stream2 - VLC 媒體播放器", position);
                         break;
                     }
