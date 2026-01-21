@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="BaseGroupBox" TargetType="GroupBox">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type GroupBox}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Header -->
+                        <Border x:Name="borderHeader" 
+                        Grid.Row="0" 
+                        BorderBrush="{TemplateBinding Background}" 
+                        Background="{TemplateBinding Background}" 
+                        BorderThickness="0"
+                        CornerRadius="5,5,0,0" 
+                        SnapsToDevicePixels="True"
+                        HorizontalAlignment="Stretch">
+                            <Grid Margin="5">
+                                <!-- 直接用 ContentPresenter 呈現 Header -->
+                                <ContentPresenter x:Name="headerPresenter"
+                                          ContentSource="Header"
+                                          RecognizesAccessKey="True"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                        <!-- Body -->
+                        <Border Grid.Row="1" 
+                        BorderBrush="{TemplateBinding Background}" 
+                        BorderThickness="1,0,1,1"
+                        CornerRadius="0,0,5,5" 
+                        SnapsToDevicePixels="True">
+                            <ContentPresenter Margin="10" x:Name="cpmdi"/>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!-- 沒有 Header 的時候，縮小上方區域 -->
+                        <Trigger Property="Header" Value="{x:Null}">
+                            <Setter TargetName="cpmdi" Property="Margin" Value="10"/>
+                            <Setter TargetName="borderHeader" Property="Height" Value="32"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

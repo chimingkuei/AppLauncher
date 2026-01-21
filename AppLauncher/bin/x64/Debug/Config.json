@@ -1,0 +1,43 @@
+[
+  {
+    "Models": [
+      {
+        "SerialNumbers": {
+          "Parameter1_val": "",
+          "Parameter2_val": "",
+          "Window_X_val": "100",
+          "Window_Y_val": "100",
+          "Window_Width_val": "400",
+          "Window_Height_val": "400",
+          "Gap_Width_val": "200",
+          "Gap_Height_val": "200",
+          "RTSP_Path_val": "D:\\Chimingkuei\\repos\\AppLauncher\\AppLauncher\\bin\\x64\\Debug\\rtsp.csv",
+          "VLCPath_Path_val": "D:\\vlc-3.0.21\\vlc.exe",
+          "VLCPath_val": ""
+        }
+      },
+      {
+        "SerialNumbers": {
+          "Parameter1_val": "",
+          "Parameter2_val": ""
+        }
+      }
+    ]
+  },
+  {
+    "Models": [
+      {
+        "SerialNumbers": {
+          "Parameter1_val": "",
+          "Parameter2_val": ""
+        }
+      },
+      {
+        "SerialNumbers": {
+          "Parameter1_val": "",
+          "Parameter2_val": ""
+        }
+      }
+    ]
+  }
+]
